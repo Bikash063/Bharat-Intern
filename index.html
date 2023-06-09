@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bikash protofilio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72ce0efb7f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("back1b.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.port {
+    display: inline;
+    font-size: 35px;
+    color: #ff004f;
+
+}
+
+    {
+    display: inline-block;
+    text-decoration: none;
+
+
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(187, 226, 208);
+    font-size: 20px;
+    position: relative;
+}
+
+.list {
+    padding-left: 35px;
+}
+
+.bar {
+    margin-left: 850px;
+}
+
+nav ul li ::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    margin-top: 10%;
+    font-size: 30px;
+    margin-left: 140px;
+
+
+
+}
+
+.content p {
+    color: white
+}
+
+.content h1 span {
+    color: #ff004f;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.img1 {
+    position: absolute;
+    top: 175px;
+    right: 100px;
+}
+
+.hjc {
+    position: absolute;
+    top: 430px;
+    right: 500px;
+}
+
+.main {
+    height: 750px;
+}
+
+
+
+/* ..................about................... */
+
+
+
+
+#about {
+    padding: 80px 0;
+    color: wheat
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    border-radius: 15px;
+}
+
+.col2 {
+    flex-basis: 60%;
+}
+
+.sub_head {
+    font-size: 60px;
+    color: white;
+}
+
+.table_tittle {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.table_links {
+    margin-right: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
+.table_links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.table_links.active_links::after {
+    width: 50%;
+}
+
+table-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.table_contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+/* .table_contents {
+    display: none;
+} */
+
+
+
+
+#services {
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.services_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services_list div {
+    background: #4a3389;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services_list div i {
+    font-size: 60px;
+}
+
+.services_list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services_list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.services_list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/* _________portofilio_________ */
+#portofilio {
+    padding: 50px 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.work_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0, 6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+
+
+}
+
+/* _________contact________ */
+.contact_left {
+    flex-basis: 35%;
+
+
+}
+
+.contact_right {
+    flex-basis: 60%;
+}
+
+.contact_left p {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.contact_left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translate(-5px);
+    color: #ff004f;
+
+}
+
+.btn {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    background: #ff004f;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #4a3389;
+    background: black;
+}
+
+.contact_right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #525fc4;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <nav class="port">Portfolio</nav>
+            <nav class="bar">
+                <ul>
+                    <li class="list"><a href="#">Home</a></li>
+                    <li class="list"><a href="#">About</a></li>
+                    <li class="list"><a href="#">service</a></li>
+                    <li class="list"><a href="#">resume</a></li>
+                    <li class="list"><a href="#" target="_blank">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <p>Web devloper</p>
+            <h1>Hii, I'm <span>Bikash</span></h1>
+            <h1>Chandra Nayak from India</h1>
+        </div>
+        <div class="img1"><img src="pngegg.png" height="300px"></a></div>
+        <div class="hjc"> <img src="html.png" height="300px"></div>
+    </div>
+    <!-- ........................about page............................. -->
+    <div id="about">
+        <div class="contanair">
+            <div class="row">
+                <div class="col1"><img src="rfvfvjfnvfnvef.jpg" height="500px"></div>
+                <div class="col2">
+                    <h1 class="sub_head">About me</h1>
+                    <p> I am a B.tech 4th semester
+                        student specializing in the field
+                        computer science and
+                        engineering .Throughout my
+                        academic journey ,I have
+                        developed a strong foundation
+                        in software field.</p>
+                    <div class="table_tittle">
+                        <p class="table_links active_links" onclick="opentab(Skills)">Skills</p>
+                        <p class="table_links" onclick="opentab(Experience)">Experiance</p>
+                        <p class="table_links" onclick="opentab(Education)">Education</p>
+                    </div>
+                    <div class="table_contents" id="Skills">
+                        <ul>
+                            <li><span>Web Devlopment</span> <br>Designing frontend interferance of<br> website and
+                                manageing data of website</li>
+                            <li><span>Photo Editing</span> <br>grapics designning and photo eding</li>
+                            <li><span>Video Editing</span><br> enhancing the video quality and rendering </li>
+                        </ul>
+                    </div>
+                    <div class="table_contents" id="Experience">
+                        <ul>
+                            <li><span>Manageing College website</span>I am manageing our college students <br>website
+                                and regurarly updating the content of<br>this website</li>
+                            <li><span>tech fest website</span> <br>now i am creating a website for our college anual
+                                tech fest</li>
+                            <li><span>this protofilio</span><br> By making this protofilio website i have also get some
+                                knowledge about this web devlopment</li>
+                        </ul>
+                    </div>
+                    <div class="table_contents" id=Education>
+                        <ul>
+                            <li><span>10 th</span> <br>I have completed my schooling from N.G Highschool Rajkanika</li>
+                            <li><span> +2</span> <br> I have completed my +2 from S>N college Rajkanika</li>
+                            <li><span> B.tech</span><br> Now i am continuing my b.tech from Einstein Acadedemy Of
+                                Technology and Management Bhubaneswar </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ....................service................... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_head"> services</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p> As a web developer, I combine creativity and technical proficiency to bring ideas to life. From
+                        responsive and mobile-friendly websites to robust web applications, I have hands-on experience
+                        in front-end and back-end development. I am dedicated to building websites that not only look
+                        amazing but also provide seamless functionality.</p>
+                    <a href="#"> learn More </a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-regular fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> Creating delightful user experiences is at the heart of my design process. With a keen eye for
+                        aesthetics and a deep understanding of user behavior, I ensure that every interaction is
+                        intuitive, visually appealing, and enhances the overall usability of a product. Through
+                        wireframing, prototyping, and user testing </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-video"></i>
+                    <h2>Video Edting</h2>
+                    <p> Video has become a powerful medium for storytelling, and I specialize in crafting compelling
+                        narratives through seamless video editing. From capturing footage to post-production editing, I
+                        have a strong command of video editing software and techniques. I meticulously work with color
+                        grading, transitions, visual effects, and sound design </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ____________portfilio__________ -->
+    <div id="portofilio">
+        <div class="contanaier">
+            <h1 class="sub_head">My Work</h1>
+            <div class="work_list">
+                <div class="work"><img src="web-g5d4a3b311_1920.jpg" height="250px" width="450px">
+                    <div class="layer">
+                        <h3> project work</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work"><img src="nokia-g881e5a7b7_1920.jpg" height="250px" width="450px">
+                    <div class="layer">
+                        <h3> Social Media work</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work"><img src="video-editing-g68ed2729c_1920.jpg" height="250px" width="450px">
+                    <div class="layer">
+                        <h3> video and photo editing</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ______________contact______________ -->
+    <div id="contact">
+        <div class="contaneier">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_tittle">contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>bikashchandranayak7077@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>7077563250</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/_the_evil_bikash/?utm_source=qr"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                    <a href="BikashCv.pdf"><button class="btn" type="">Download CV</button></a>
+
+
+                </div>
+                <div class="contact_right">
+                    <form>
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your email" required>
+                        <textarea name="messege" id="" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p align="center" style="color: #ff004f; margin-top: 40px;">Copyright @Bikash Protofilio</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("table_links");
+        var tabcontents = document.getElementsByClassName("table_contents");
+        function opentab(tabname) {
+            for (tablink of tabliks) {
+                tablink.classlist.remove("active_link");
+
+            }
+            for (tablink of tabliks) {
+                tablink.classlist.remove("active_link");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
